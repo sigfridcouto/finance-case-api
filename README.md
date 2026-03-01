@@ -99,4 +99,33 @@ This enforces explicit and traceable state transitions in the Domain layer.
 
 ## 🚀 Getting Started
 
-### 1️⃣ Restore dependencies
+dotnet restore
+
+### 2️⃣ Apply database migrations
+
+dotnet ef database update -p FinanceCase.Infrastructure -s FinanceCase.Api
+
+### 3️⃣ Run the API
+
+dotnet run --project FinanceCase.Api
+
+---
+
+## 🧪 Run Tests
+
+dotnet test
+
+
+Unit tests cover:
+
+- Domain state transitions
+- Business constraint violations
+- Validation scenarios
+
+---
+
+## 📌 Purpose
+
+This repository is designed as a structured backend reference implementation for enterprise-oriented financial workflows.
+
+The focus is on clarity, consistency and long-term maintainability rather than rapid prototyping.
